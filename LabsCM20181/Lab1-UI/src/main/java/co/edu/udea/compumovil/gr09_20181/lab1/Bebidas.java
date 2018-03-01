@@ -1,4 +1,4 @@
-package co.edu.udea.compumovil.grXX_20181.lab1;
+package co.edu.udea.compumovil.gr09_20181.lab1;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,13 +14,15 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class Platos extends AppCompatActivity
+import co.edu.udea.compumovil.gr09_20181.lab1.R;
+
+public class Bebidas extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_platos);
+        setContentView(R.layout.activity_bebidas);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -56,7 +58,7 @@ public class Platos extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.platos, menu);
+        getMenuInflater().inflate(R.menu.bebidas, menu);
         return true;
     }
 
@@ -82,13 +84,13 @@ public class Platos extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.Platos) {
-            Intent intent = new Intent(Platos.this, Platos.class);
+            Intent intent = new Intent(Bebidas.this, Platos.class);
             startActivity(intent);
         } else if (id == R.id.Bebidas) {
-            Intent intent = new Intent(Platos.this, Bebidas.class);
+            Intent intent = new Intent(Bebidas.this, Bebidas.class);
             startActivity(intent);
         } else if (id == R.id.Configuracion) {
-            Intent intent = new Intent(Platos.this, Restaurante.class);
+            Intent intent = new Intent(Bebidas.this, Restaurante.class);
             startActivity(intent);
         }
 

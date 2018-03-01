@@ -1,4 +1,4 @@
-package co.edu.udea.compumovil.grXX_20181.lab1;
+package co.edu.udea.compumovil.gr09_20181.lab1;
 
 import org.junit.Test;
 

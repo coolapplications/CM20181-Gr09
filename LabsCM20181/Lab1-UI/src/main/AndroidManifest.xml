@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="co.edu.udea.compumovil.grXX_20181.lab1">
+    package="co.edu.udea.compumovil.gr09_20181.lab1">
 
     <application
         android:allowBackup="true"
@@ -9,9 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Restaurante" />
+        <activity android:name="co.edu.udea.compumovil.gr09_20181.lab1.Restaurante" />
         <activity
-            android:name=".SplashScreen"
+            android:name="co.edu.udea.compumovil.gr09_20181.lab1.SplashScreen"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,22 +20,22 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Bebidas"
+            android:name="co.edu.udea.compumovil.gr09_20181.lab1.Bebidas"
             android:label="@string/title_activity_bebidas"
-            android:parentActivityName=".Restaurante"
+            android:parentActivityName="co.edu.udea.compumovil.gr09_20181.lab1.Restaurante"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="co.edu.udea.compumovil.grXX_20181.lab1.Restaurante" />
+                android:value="co.edu.udea.compumovil.gr09_20181.lab1.Restaurante" />
         </activity>
         <activity
-            android:name=".Platos"
+            android:name="co.edu.udea.compumovil.gr09_20181.lab1.Platos"
             android:label="@string/title_activity_platos"
-            android:parentActivityName=".Restaurante"
+            android:parentActivityName="co.edu.udea.compumovil.gr09_20181.lab1.Restaurante"
             android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="co.edu.udea.compumovil.grXX_20181.lab1.Restaurante" />
+                android:value="co.edu.udea.compumovil.gr09_20181.lab1.Restaurante" />
         </activity>
     </application>
 

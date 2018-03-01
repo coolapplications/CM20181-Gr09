@@ -1,4 +1,4 @@
-package co.edu.udea.compumovil.grXX_20181.lab1;
+package co.edu.udea.compumovil.gr09_20181.lab1;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("co.edu.udea.compumovil.grXX_20181.lab1", appContext.getPackageName());
+        assertEquals("co.edu.udea.compumovil.gr09_20181.lab1", appContext.getPackageName());
     }
 }
