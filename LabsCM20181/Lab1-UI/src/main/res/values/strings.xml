@@ -1,13 +1,9 @@
 <resources>
     <string name="app_name">LabsCM20181</string>
-    <string name="title_activity_platos">Platos</string>
+    <string name="title_activity_restaurant">Restaurant</string>
 
-    <string name="navigation_drawer_open">Abrir Navigation Drawer</string>
-    <string name="navigation_drawer_close">Cerrar navigation drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <string name="action_settings">Configuraciones</string>
-    <string name="title_activity_bebidas">Bebidas</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="action_settings">Settings</string>
 </resources>

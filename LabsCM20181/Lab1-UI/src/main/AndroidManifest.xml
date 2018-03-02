@@ -9,9 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="co.edu.udea.compumovil.gr09_20181.lab1.Restaurante" />
         <activity
-            android:name="co.edu.udea.compumovil.gr09_20181.lab1.SplashScreen"
+            android:name=".SplashScreen"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,22 +19,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="co.edu.udea.compumovil.gr09_20181.lab1.Bebidas"
-            android:label="@string/title_activity_bebidas"
-            android:parentActivityName="co.edu.udea.compumovil.gr09_20181.lab1.Restaurante"
+            android:name=".Restaurant"
+            android:label="@string/title_activity_restaurant"
             android:theme="@style/AppTheme.NoActionBar">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="co.edu.udea.compumovil.gr09_20181.lab1.Restaurante" />
-        </activity>
-        <activity
-            android:name="co.edu.udea.compumovil.gr09_20181.lab1.Platos"
-            android:label="@string/title_activity_platos"
-            android:parentActivityName="co.edu.udea.compumovil.gr09_20181.lab1.Restaurante"
-            android:theme="@style/AppTheme.NoActionBar">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="co.edu.udea.compumovil.gr09_20181.lab1.Restaurante" />
         </activity>
     </application>
 

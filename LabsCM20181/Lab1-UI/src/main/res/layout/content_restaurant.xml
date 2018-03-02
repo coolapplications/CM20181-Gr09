@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="co.edu.udea.compumovil.gr09_20181.lab1.Restaurant"
+    tools:showIn="@layout/app_bar_restaurant">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="322dp"
+            android:layout_height="196dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="42dp"
+            android:baselineAligned="false"
+            android:src="@drawable/food"
+            tools:layout_editor_absoluteX="19dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="322dp"
+            android:layout_height="196dp"
+
+            android:layout_alignLeft="@+id/imageButton2"
+            android:layout_alignStart="@+id/imageButton2"
+            android:layout_below="@+id/imageButton2"
+            android:layout_marginTop="44dp"
+            android:src="@drawable/drink"
+            tools:layout_editor_absoluteX="19dp"
+            tools:layout_editor_absoluteY="264dp" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
