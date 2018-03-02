@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="co.edu.udea.compumovil.gr09_20181.lab1.Restaurante">
+    tools:context="co.edu.udea.compumovil.gr09_20181.lab1.Restaurante"
+    android:id="@+id/restaurante">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -19,8 +20,7 @@
             android:layout_alignStart="@+id/imageButton3"
             android:layout_marginTop="24dp"
             android:baselineAligned="false"
-            android:onClick="platos"
-            app:srcCompat="@drawable/food"
+            android:src="@drawable/food"
             tools:layout_editor_absoluteX="19dp"
             tools:layout_editor_absoluteY="16dp" />
 
@@ -31,8 +31,8 @@
             android:layout_below="@+id/imageButton2"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="32dp"
-            android:onClick="bebidas"
-            app:srcCompat="@drawable/drink"
+
+            android:src="@drawable/drink"
             tools:layout_editor_absoluteX="19dp"
             tools:layout_editor_absoluteY="264dp" />
     </RelativeLayout>

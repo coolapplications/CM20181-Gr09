@@ -7,15 +7,15 @@
         <item
             android:id="@+id/Platos"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="Platos" />
+            android:title="@string/title_activity_platos" />
         <item
             android:id="@+id/Bebidas"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="Bebidas" />
+            android:title="@string/title_activity_bebidas" />
         <item
             android:id="@+id/Configuracion"
             android:icon="@drawable/ic_menu_manage"
-            android:title="Configuracion" />
+            android:title="@string/action_settings" />
     </group>
 
 
