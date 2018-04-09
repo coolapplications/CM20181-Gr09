@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LabsCM20181</string>
+    <string name="title_activity_restaurant">Restaurant</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="Nombre">Name</string>
+    <string name="sh">Select Schedule</string>
+    <string name="m">Morning</string>
+    <string name="t">Afternoon</string>
+    <string name="n">Night</string>
+    <string name="tipop">Select Dish Type</string>
+    <string name="e">Appetizer</string>
+    <string name="pf">Main Course</string>
+    <string name="timep">Select Preparation Time</string>
+    <string name="p">Price</string>
+    <string name="i">Ingredients</string>
+    <string name="rp">Dish Register</string>
+    <string name="rb">Drink Register</string>
+    <string name="tvl2">Information</string>
+    <string name="plato">Dishes</string>
+    <string name="bebidas">Drinks</string>
+</resources>

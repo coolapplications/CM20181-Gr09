@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">LabsCM20181</string>
+    <string name="title_activity_restaurant">Restaurant</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="Nombre">Nombre</string>
+    <string name="sh">Seleccion Horario</string>
+    <string name="m">Mañana</string>
+    <string name="t">Tarde</string>
+    <string name="n">Noche</string>
+    <string name="tipop">Seleccione Tipo de Plato</string>
+    <string name="e">Entrada</string>
+    <string name="pf">Plato Fuerte</string>
+    <string name="timep">Seleccione Tiempo de Preparación</string>
+    <string name="p">Precio</string>
+    <string name="i">Ingredientes</string>
+    <string name="rp">Registrar Plato</string>
+    <string name="rb">Registrar Bebida</string>
+    <string name="tvl2">Información</string>
+    <string name="plato">Platos</string>
+    <string name="bebidas">Bebidas</string>
+    
+</resources>
