@@ -41,7 +41,8 @@
             android:name=".LoginWindow"
             android:theme="@style/Theme.AppCompat.NoActionBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
-        <activity android:name=".UserRegister"></activity>
+        <activity android:name=".UserRegister" />
+        <activity android:name=".Profile"></activity>
     </application>
 
 </manifest>
