@@ -18,7 +18,7 @@ public class SQLite_OpenHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         String query="create table users(_ID integer primary key autoincrement, " +
-                "Photo text, Name text, Email text, Password text);";
+                "Photo txt, Name text, Email text, Password text);";
         sqLiteDatabase.execSQL(query);
     }
 
