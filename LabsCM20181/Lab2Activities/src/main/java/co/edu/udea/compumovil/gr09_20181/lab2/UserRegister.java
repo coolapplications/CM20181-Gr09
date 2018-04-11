@@ -18,8 +18,9 @@ import static android.content.Intent.createChooser;
 public class UserRegister extends AppCompatActivity {
 
     Button btnRecordUser;
-    ImageView phot = (ImageView)findViewById(R.id.imvPhoto);
-    EditText photo, txtNameUser, txtMailuser, txtPassUser;
+    ImageView photo = (ImageView)findViewById(R.id.imvPhoto);
+    Uri uriIm;
+    EditText txtNameUser, txtMailuser, txtPassUser;
 
 
     SQLite_OpenHelper helper = new SQLite_OpenHelper(this, "BD", null, 1 );
@@ -39,7 +40,7 @@ public class UserRegister extends AppCompatActivity {
             public void onClick(View view) {
 
                 helper.openDB();
-                helper.newRegister(String.valueOf(photo.getText()),
+                helper.newRegister(String.valueOf(uriIm.toString()),
                         String.valueOf(txtNameUser.getText()),
                         String.valueOf(txtMailuser.getText()),
                         String.valueOf(txtPassUser.getText()));
@@ -66,7 +67,8 @@ public class UserRegister extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if(resultCode==RESULT_OK){
             Uri path = data.getData();
-            phot.setImageURI(path);
+            photo.setImageURI(path);
+            uriIm = path;
         }
     }
 }
