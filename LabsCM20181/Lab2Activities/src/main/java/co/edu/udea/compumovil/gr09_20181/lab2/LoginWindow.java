@@ -59,4 +59,10 @@ public class LoginWindow extends AppCompatActivity {
             }
         });
     }
+
+    public void onClick(View view) {
+        Intent click1 = new Intent(this, UserRegister.class);
+        startActivity(click1);
+        finish();
+    }
 }

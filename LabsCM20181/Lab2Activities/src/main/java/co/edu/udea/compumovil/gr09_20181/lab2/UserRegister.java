@@ -18,7 +18,7 @@ import static android.content.Intent.createChooser;
 public class UserRegister extends AppCompatActivity {
 
     Button btnRecordUser;
-    ImageView photo = (ImageView)findViewById(R.id.imvPhoto);
+    ImageView photo;
     Uri uriIm;
     EditText txtNameUser, txtMailuser, txtPassUser;
 
@@ -29,7 +29,7 @@ public class UserRegister extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_register);
-
+        photo = (ImageView)findViewById(R.id.imvPhoto);
         btnRecordUser = (Button)findViewById(R.id.btnReg);
         txtNameUser = (EditText)findViewById(R.id.txtNomReg);
         txtMailuser = (EditText)findViewById(R.id.txtMailReg);
@@ -49,7 +49,7 @@ public class UserRegister extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "Registro Almacenado con éxito",
                         Toast.LENGTH_LONG).show();
 
-                Intent i = new Intent(getApplicationContext(), Restaurant.class);
+                Intent i = new Intent(getApplicationContext(), LoginWindow.class);
                 startActivity(i);
             }
         });
@@ -70,5 +70,11 @@ public class UserRegister extends AppCompatActivity {
             photo.setImageURI(path);
             uriIm = path;
         }
+    }
+
+    public void onClick1(View view) {
+        Intent click1 = new Intent(this, UserRegister.class);
+        startActivity(click1);
+        finish();
     }
 }
