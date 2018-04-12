@@ -1,5 +1,6 @@
 package co.edu.udea.compumovil.gr09_20181.lab2;
 
+import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.PersistableBundle;
@@ -83,8 +84,28 @@ public class Restaurant extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_platos) {
+            Intent intent = new Intent(this, MenuRegister.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_bebidas) {
+            Intent intent = new Intent(this, DrinkRegister.class);
+            startActivity(intent);
+
+        }else if(id == R.id.nav_perfil){
+            Intent intent = new Intent(this, Profile.class);
+            startActivity(intent);
+
+        }else if(id == R.id.nav_config){
+            onCreateView();
+
+
+        }else if(id == R.id.nav_cerrar){
+            Intent intent = new Intent(this, LoginWindow.class);
+            startActivity(intent);
+
+        }else if(id == R.id.nav_acerca){
+            Intent intent = new Intent(this, LoginWindow.class);
+            startActivity(intent);
 
         }
 

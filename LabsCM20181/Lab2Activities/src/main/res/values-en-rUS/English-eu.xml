@@ -24,4 +24,10 @@
     <string name="tvl2">Information</string>
     <string name="plato">Dishes</string>
     <string name="bebidas">Drinks</string>
+    <string name="perfil">Profile</string>
+    <string name="cerrarSesion">Log Out</string>
+    <string name="acercaDe">About</string>
+    <string name="configperfil">Configurar Perfil</string>
+    <string name="autorize">Authorize Notifications</string>
+    <string name="active">Active Notifications</string>
 </resources>

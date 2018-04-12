@@ -28,7 +28,8 @@
         android:layout_marginTop="32dp"
         android:text="Consultar Usuario"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtConsultar" />
+        app:layout_constraintTop_toBottomOf="@+id/txtConsultar"
+        android:layout_marginLeft="24dp" />
 
     <Button
         android:id="@+id/btnTodos"

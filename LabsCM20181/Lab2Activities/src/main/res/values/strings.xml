@@ -5,7 +5,7 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">Configuraciones</string>
 
     <string name="Nombre">Nombre</string>
     <string name="sh">Seleccion Horario</string>
@@ -37,5 +37,14 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+    <string name="perfil">Perfil</string>
+    <string name="cerrarSesion">Cerrar Sesión</string>
+    <string name="acercaDe">Acerca De</string>
+    <string name="configperfil">Configurar Perfil</string>
+    <string name="autorize">Autorizar Notificaciones</string>
+    <string name="active">Activar Notificaciones</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

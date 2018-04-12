@@ -41,10 +41,10 @@ public class LoginWindow extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                EditText txtName = (EditText)findViewById(R.id.txtName);
+                EditText txtMail = (EditText)findViewById(R.id.txtMail);
                 EditText txtPass = (EditText)findViewById(R.id.txtPass);
 
-                Cursor cursor = helper.consultarUsuPass(txtName.getText().toString(), txtPass.getText().toString());
+                Cursor cursor = helper.consultarUsuPass(txtMail.getText().toString(), txtPass.getText().toString());
                 if (cursor.getCount() > 0){
                     Toast.makeText(getApplicationContext(), "Bienvenido", Toast.LENGTH_LONG).show();
                     Intent i = new Intent(getApplicationContext(), Restaurant.class);
@@ -53,9 +53,9 @@ public class LoginWindow extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Usuario Y/O password incorrectos", Toast.LENGTH_LONG).show();
                 }
 
-                txtName.setText("");
+                txtMail.setText("");
                 txtPass.setText("");
-                txtName.findFocus();
+                txtMail.findFocus();
             }
         });
     }

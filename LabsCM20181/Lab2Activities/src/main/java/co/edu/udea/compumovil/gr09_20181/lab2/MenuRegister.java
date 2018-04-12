@@ -56,7 +56,6 @@ public class MenuRegister extends AppCompatActivity {
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP_MR1)
     public void onclicK(View view) {
-
         cargarImagen();
     }
 
