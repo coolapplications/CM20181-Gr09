@@ -1,5 +1,7 @@
 package co.edu.udea.compumovil.gr09_20181.lab2.Tables;
 
+import android.database.Cursor;
+
 /**
  * Created by estudiante on 11/04/18.
  */
@@ -49,4 +51,5 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
+
 }

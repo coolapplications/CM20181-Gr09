@@ -6,17 +6,23 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="co.edu.udea.compumovil.gr09_20181.lab2.Restaurant"
-    tools:showIn="@layout/app_bar_restaurant">
+    tools:showIn="@layout/app_bar_restaurant"
+    android:id="@+id/parte">
 
     <RelativeLayout
+        android:id="@+id/principal"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <fragment
-            android:id="@+id/fragmento"
+       <!-- <fragment
+            android:name="co.edu.udea.compumovil.gr09_20181.lab2.FragmentSettings"
+            android:id="@+id/ejemplo"
+            android:layout_weight="1"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent" />
+            -->
 
+<!--
         <ImageButton
             android:id="@+id/imageButton2"
             android:layout_width="322dp"
@@ -42,6 +48,7 @@
             android:src="@drawable/drink"
             tools:layout_editor_absoluteX="19dp"
             tools:layout_editor_absoluteY="264dp" />
+-->
     </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>

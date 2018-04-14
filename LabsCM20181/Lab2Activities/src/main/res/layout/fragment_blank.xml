@@ -2,11 +2,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="co.edu.udea.compumovil.gr09_20181.lab2.PreferenceFragmentSetting"
-    android:id="@+id/preferenceFragment">
+    tools:context="co.edu.udea.compumovil.gr09_20181.lab2.FragmentSettings">
 
     <!-- TODO: Update blank fragment layout -->
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -31,7 +29,5 @@
             android:text="@string/active"/>
 
     </LinearLayout>
-
-
 
 </FrameLayout>

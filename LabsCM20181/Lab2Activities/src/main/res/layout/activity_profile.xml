@@ -27,6 +27,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="32dp"
         android:text="Consultar Usuario"
+        android:onClick="consultar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtConsultar"
         android:layout_marginLeft="24dp" />
@@ -39,6 +40,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
         android:text="Mostrar Todos"
+        android:onClick="mostrar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnConsultar"
         app:layout_constraintTop_toBottomOf="@+id/txtConsultar" />
@@ -48,5 +50,6 @@
         android:layout_width="368dp"
         android:layout_height="358dp"
         tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="145dp" />
+        tools:layout_editor_absoluteY="145dp"
+        tools:ignore="MissingConstraints" />
 </android.support.constraint.ConstraintLayout>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="co.edu.udea.compumovil.gr09_20181.lab1.DrinkRegister">
+    tools:context="co.edu.udea.compumovil.gr09_20181.lab2.DrinkRegister">
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/constraintLayout"
@@ -15,7 +15,8 @@
         android:layout_marginTop="4dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="8dp">
 
         <ScrollView
             android:layout_width="match_parent"
@@ -147,7 +148,8 @@
             android:layout_height="match_parent"
             android:layout_marginTop="4dp"
             app:layout_constraintTop_toTopOf="parent"
-            tools:layout_editor_absoluteX="0dp">
+            tools:layout_editor_absoluteX="0dp"
+            tools:ignore="MissingConstraints">
 
             <TextView
                 android:id="@+id/textInfo"

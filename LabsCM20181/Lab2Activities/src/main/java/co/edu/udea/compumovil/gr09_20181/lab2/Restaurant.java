@@ -3,12 +3,9 @@ package co.edu.udea.compumovil.gr09_20181.lab2;
 import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.PersistableBundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -16,8 +13,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ImageButton;
-
 
 
 public class Restaurant extends AppCompatActivity
@@ -41,8 +38,11 @@ public class Restaurant extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        ib2 = findViewById(R.id.imageButton2);
-        ib3 = findViewById(R.id.imageButton3);
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        fragmentManager.beginTransaction().replace(R.id.principal, new PrincipalFragment()).commit();
+
+        //ib2 = findViewById(R.id.imageButton2);
+        //ib3 = findViewById(R.id.imageButton3);
     }
 
     @Override
@@ -83,6 +83,8 @@ public class Restaurant extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
+        FragmentManager fragmentManager = getSupportFragmentManager();
+
         if (id == R.id.nav_platos) {
             Intent intent = new Intent(this, MenuRegister.class);
             startActivity(intent);
@@ -96,8 +98,7 @@ public class Restaurant extends AppCompatActivity
             startActivity(intent);
 
         }else if(id == R.id.nav_config){
-            onCreateView();
-
+            fragmentManager.beginTransaction().replace(R.id.principal, new FragmentSettings()).commit();
 
         }else if(id == R.id.nav_cerrar){
             Intent intent = new Intent(this, LoginWindow.class);
