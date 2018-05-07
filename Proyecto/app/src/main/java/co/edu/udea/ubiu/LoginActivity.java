@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.google.android.gms.maps.SupportMapFragment;
+
 public class LoginActivity extends AppCompatActivity {
 
     @Override
