@@ -20,9 +20,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
-        mMap.setMapType(4);
-        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
-        mapFragment.getMapAsync(this);
+
     }
 
 
@@ -38,10 +36,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     public void onMapReady(GoogleMap googleMap) {
 
-        mMap = googleMap;
-        LatLng medellin = new LatLng(6.2673, -75.5691);
-        CameraPosition target = CameraPosition.builder().target(medellin).zoom(17).build();
 
-        mMap.moveCamera(CameraUpdateFactory.newCameraPosition(target));
     }
 }
