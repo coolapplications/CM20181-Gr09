@@ -44,8 +44,6 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        FragmentManager fm= getFragmentManager();
-        fm.beginTransaction().replace(R.id.content_frame, new GMapFragment()).commit();
     }
 
     @Override
@@ -88,12 +86,11 @@ public class MainActivity extends AppCompatActivity
 
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-
-        } else if (id == R.id.nav_gallery) {
+        if (id == R.id.nav_gallery) {
+            fm.beginTransaction().replace(R.id.content_frame, new GMapFragment()).commit();
 
         } else if (id == R.id.nav_slideshow) {
-            fm.beginTransaction().replace(R.id.content_frame, new GMapFragment()).commit();
+
 
         } else if (id == R.id.nav_manage) {
 
