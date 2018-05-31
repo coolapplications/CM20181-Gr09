@@ -36,7 +36,8 @@ public class GMapFragment extends Fragment implements OnMapReadyCallback {
     LatLng quilla = new LatLng(6.265207, -75.567844);
     LatLng humanas = new LatLng(6.265601, -75.570835);
 
-    MarkerOptions bl19;
+    MarkerOptions bl1,bl2,bl3,bl4,bl5,bl6,bl7,bl8,bl9,bl10,
+            bl11,bl12,bl13,bl14,bl15,bl16,bl17,bl18,bl19,bl21,bl22;
 
     @Nullable
     @Override
@@ -47,7 +48,10 @@ public class GMapFragment extends Fragment implements OnMapReadyCallback {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        bl19 = new MarkerOptions().position(new LatLng(6.268242, -75.567333)).title("Bloque 19");
+        bl9 = new MarkerOptions().position(new LatLng(6.2657,
+                -75.5699)).title("Bloque 9");
+        bl19 = new MarkerOptions().position(new LatLng(6.268242,
+                -75.567333)).title("Bloque 19");
 
         MapFragment fragment = (MapFragment) getChildFragmentManager().findFragmentById(R.id.map);
         fragment.getMapAsync(this);
@@ -57,6 +61,7 @@ public class GMapFragment extends Fragment implements OnMapReadyCallback {
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
         mMap.addMarker(bl19);
+        mMap.addMarker(bl9);
         mMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
         CameraPosition inicialPos = CameraPosition.builder().target(medellin).zoom(17).tilt(0).build();
         mMap.moveCamera(CameraUpdateFactory.newCameraPosition(inicialPos));
