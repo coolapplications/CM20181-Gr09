@@ -23,5 +23,5 @@
     keytool -list -v -keystore ~/.android/debug.keystore -alias androiddebugkey
     -storepass android -keypass android
     -->
-    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyDDdwzevTH4lNFJjkMSDWv7DrbJTV9eL5o</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCedFcX6X-eQu1x1jgba3vx3tMEYQmQ7u0</string>
 </resources>
