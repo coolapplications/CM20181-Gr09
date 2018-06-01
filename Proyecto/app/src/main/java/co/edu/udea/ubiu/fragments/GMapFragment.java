@@ -36,8 +36,9 @@ public class GMapFragment extends Fragment implements OnMapReadyCallback {
     LatLng quilla = new LatLng(6.265207, -75.567844);
     LatLng humanas = new LatLng(6.265601, -75.570835);
 
-    MarkerOptions bl1,bl2,bl3,bl4,bl5,bl6,bl7,bl8,bl9,bl10,
-            bl11,bl12,bl13,bl14,bl15,bl16,bl17,bl18,bl19,bl21,bl22;
+    MarkerOptions bl1,bl2,bl3,bl4,bl5,bl6,bl7,bl8,bl9,bl20,bl10,
+            bl11,bl12,bl13,bl14,bl15,bl16,bl17,bl18,bl19,bl21,bl22,bl23,bl24,bl25,bl26,
+            bl27,bl28,bl29;
 
     @Nullable
     @Override
@@ -48,10 +49,64 @@ public class GMapFragment extends Fragment implements OnMapReadyCallback {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        bl1 = new MarkerOptions().position(new LatLng(6.2655,
+                -75.5686)).title("Bloque 1");
+        bl2 = new MarkerOptions().position(new LatLng(6.2657,
+                -75.5680)).title("Bloque 2");
+        bl3 = new MarkerOptions().position(new LatLng(6.2660,
+                -75.5682)).title("Bloque 3");
+        bl4 = new MarkerOptions().position(new LatLng(6.2663,
+                -75.5680)).title("Bloque 4");
+        bl5 = new MarkerOptions().position(new LatLng(6.2666,
+                -75.5683)).title("Bloque 5");
+        bl6 = new MarkerOptions().position(new LatLng(6.2664,
+                -75.5688)).title("Bloque 6");
+        bl7 = new MarkerOptions().position(new LatLng(6.2659,
+                -75.5688)).title("Bloque 7");
+        bl8 = new MarkerOptions().position(new LatLng(6.2668,
+                -75.5692)).title("Bloque 8");
         bl9 = new MarkerOptions().position(new LatLng(6.2657,
-                -75.5699)).title("Bloque 9");
-        bl19 = new MarkerOptions().position(new LatLng(6.268242,
-                -75.567333)).title("Bloque 19");
+                -75.5690)).title("Bloque 9");
+        bl10 = new MarkerOptions().position(new LatLng(6.2663,
+                -75.5699)).title("Bloque 10");
+        bl11 = new MarkerOptions().position(new LatLng(6.2667,
+                -75.5698)).title("Bloque 11");
+        bl12 = new MarkerOptions().position(new LatLng(6.2669,
+                -75.5703)).title("Bloque 12");
+        bl13 = new MarkerOptions().position(new LatLng(6.2665,
+                -75.5704)).title("Bloque 13");
+        bl14 = new MarkerOptions().position(new LatLng(6.2661,
+                -75.5704)).title("Bloque 14");
+        bl15 = new MarkerOptions().position(new LatLng(6.2673,
+                -75.5698)).title("Bloque 15");
+        bl16 = new MarkerOptions().position(new LatLng(6.2674,
+                -75.5683)).title("Bloque 16");
+        bl17 = new MarkerOptions().position(new LatLng(6.2669,
+                -75.5690)).title("Bloque 17");
+        bl18 = new MarkerOptions().position(new LatLng(6.2677,
+                -75.5673)).title("Bloque 18");
+        bl19 = new MarkerOptions().position(new LatLng(6.2682,
+                -75.5673)).title("Bloque 19");
+        bl20 = new MarkerOptions().position(new LatLng(6.2683,
+                -75.5680)).title("Bloque 20");
+        bl21 = new MarkerOptions().position(new LatLng(6.2679,
+                -75.5680)).title("Bloque 21");
+        bl22 = new MarkerOptions().position(new LatLng(6.2681,
+                -75.5686)).title("Bloque 22").alpha(0.3f);
+        bl23 = new MarkerOptions().position(new LatLng(6.2679,
+                -75.5693)).title("Bloque 23");
+        bl24 = new MarkerOptions().position(new LatLng(6.2681,
+                -75.5698)).title("Bloque 24");
+        bl25 = new MarkerOptions().position(new LatLng(6.2677,
+                -75.5698)).title("Bloque 25");
+        bl26 = new MarkerOptions().position(new LatLng(6.2684,
+                -75.5691)).title("Bloque 26");
+        bl27 = new MarkerOptions().position(new LatLng(6.2694,
+                -75.5682)).title("Bloque 27");
+        bl28 = new MarkerOptions().position(new LatLng(6.2690,
+                -75.5670)).title("Bloque 28");
+        bl29 = new MarkerOptions().position(new LatLng(6.2687,
+                -75.5669)).title("Bloque 29");
 
         MapFragment fragment = (MapFragment) getChildFragmentManager().findFragmentById(R.id.map);
         fragment.getMapAsync(this);
@@ -60,8 +115,35 @@ public class GMapFragment extends Fragment implements OnMapReadyCallback {
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-        mMap.addMarker(bl19);
+        mMap.addMarker(bl1);
+        mMap.addMarker(bl2);
+        mMap.addMarker(bl3);
+        mMap.addMarker(bl4);
+        mMap.addMarker(bl5);
+        mMap.addMarker(bl6);
+        mMap.addMarker(bl7);
+        mMap.addMarker(bl8);
         mMap.addMarker(bl9);
+        mMap.addMarker(bl10);
+        mMap.addMarker(bl11);
+        mMap.addMarker(bl12);
+        mMap.addMarker(bl13);
+        mMap.addMarker(bl14);
+        mMap.addMarker(bl15);
+        mMap.addMarker(bl16);
+        mMap.addMarker(bl17);
+        mMap.addMarker(bl18);
+        mMap.addMarker(bl19);
+        mMap.addMarker(bl20);
+        mMap.addMarker(bl21);
+        mMap.addMarker(bl22);
+        mMap.addMarker(bl23);
+        mMap.addMarker(bl24);
+        mMap.addMarker(bl25);
+        mMap.addMarker(bl26);
+        mMap.addMarker(bl27);
+        mMap.addMarker(bl28);
+        mMap.addMarker(bl29);
         mMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
         CameraPosition inicialPos = CameraPosition.builder().target(medellin).zoom(17).tilt(0).build();
         mMap.moveCamera(CameraUpdateFactory.newCameraPosition(inicialPos));
