@@ -7,6 +7,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.content.ContextCompat;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -37,6 +38,7 @@ public class GMapFragment extends Fragment implements OnMapReadyCallback {
     LatLng humanas = new LatLng(6.265601, -75.570835);
 
     MarkerOptions[] blocks = new MarkerOptions[29];
+    String selectedBlock = "Bloque 1";
     float generalAlpha = 0.3f;
     float[][] latLngs = {
             {6.2655f,-75.5686f},
@@ -75,8 +77,10 @@ public class GMapFragment extends Fragment implements OnMapReadyCallback {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
 
         View v = inflater.inflate(R.layout.fragment_gmap, container, false);
-
-
+        if(this.getArguments() != null) {
+            Bundle bundle = this.getArguments();
+            selectedBlock = bundle.getString("block");
+        }
         return v;
 
     }
@@ -87,8 +91,10 @@ public class GMapFragment extends Fragment implements OnMapReadyCallback {
         super.onViewCreated(view, savedInstanceState);
 
         for(int i = 0; i < blocks.length; i++){
-
             blocks[i] = new MarkerOptions().position(new LatLng(latLngs[i][0],latLngs[i][1])).title("Bloque " + String.valueOf(i+1)).alpha(generalAlpha);
+            if(selectedBlock == "Bloque "+String.valueOf(i+1)){
+                blocks[i] = new MarkerOptions().position(new LatLng(latLngs[i][0],latLngs[i][1])).title("Bloque " + String.valueOf(i+1));
+            }
         }
 
 

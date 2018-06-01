@@ -1,6 +1,7 @@
 package co.edu.udea.ubiu.fragments;
 
 import android.app.Fragment;
+import android.app.FragmentManager;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
@@ -12,6 +13,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 
+import co.edu.udea.ubiu.MainActivity;
 import co.edu.udea.ubiu.R;
 
 /**
@@ -91,10 +93,13 @@ public class BlocksFragment extends Fragment implements View.OnClickListener {
             @Override
             public void onClick(View arg0) {
 
-                Bundle bundle =new Bundle();
-                Intent intent = new Intent(getActivity(),GMapFragment.class);
-                intent.putExtra(((Spinner) v.findViewById(R.id.spinner_blocks)).getSelectedItem().toString(), bundle);
-                startActivity(intent);
+                FragmentManager fm= getFragmentManager();
+                Bundle bundle = new Bundle();
+
+                bundle.putString("block", ((Spinner) v.findViewById(R.id.spinner_blocks)).getSelectedItem().toString());
+                GMapFragment fragInfo = new GMapFragment();
+                fragInfo.setArguments(bundle);
+                fm.beginTransaction().replace(R.id.content_frame, fragInfo).commit();
 
             }
         });
